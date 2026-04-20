@@ -1,0 +1,28 @@
+# 依赖（根目录与各子项目）
+node_modules/
+
+# 构建产物
+dist/
+*.local
+
+# 日志与调试
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# 系统与编辑器
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# 环境变量（若后续增加）
+.env
+.env.*.local
+
+# 覆盖率等
+coverage/
+.nyc_output/

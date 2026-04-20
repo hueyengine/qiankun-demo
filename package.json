@@ -1,0 +1,14 @@
+{
+  "name": "qiankuan-demo",
+  "private": true,
+  "scripts": {
+    "dev:main": "npm run serve --prefix main",
+    "dev:sub-vue2": "npm run serve --prefix sub-vue2",
+    "dev:sub-vue3-a": "npm run dev --prefix sub-vue3-a",
+    "dev:sub-vue3-b": "npm run dev --prefix sub-vue3-b",
+    "dev:all": "concurrently -n main,v2,a,b \"npm run serve --prefix main\" \"npm run serve --prefix sub-vue2\" \"npm run dev --prefix sub-vue3-a\" \"npm run dev --prefix sub-vue3-b\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

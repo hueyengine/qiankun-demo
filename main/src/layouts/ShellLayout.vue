@@ -2,6 +2,7 @@
   <div class="shell">
     <header class="top">
       <span class="logo">qiankun demo</span>
+      <span class="demo-title">主应用 .demo-title（应为蓝色）</span>
       <el-menu
         mode="horizontal"
         :router="true"

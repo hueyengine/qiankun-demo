@@ -23,6 +23,8 @@ export function setupQiankun() {
   ])
 
   start({
-    sandbox: true,
+    sandbox: {
+      experimentalStyleIsolation: true,
+    },
   })
 }

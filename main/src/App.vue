@@ -18,4 +18,9 @@ body,
   height: 100%;
   margin: 0;
 }
+
+.demo-title {
+  color: #1d4ed8;
+  font-weight: 600;
+}
 </style>

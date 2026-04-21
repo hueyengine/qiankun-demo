@@ -1,3 +1,4 @@
+import { hijackStyles, releaseStyles } from './style-hijack'
 import { createApp } from 'vue'
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
@@ -11,6 +12,7 @@ function render(props = {}) {
   const { container } = props
   const el = container ? container.querySelector('#app') : document.getElementById('app')
   if (!el) return
+  if (container) hijackStyles(container)
   app = createApp(App)
   app.use(router)
   app.use(ElementPlus)
@@ -25,6 +27,7 @@ renderWithQiankun({
     render(props)
   },
   unmount(props) {
+    releaseStyles()
     if (app) {
       app.unmount()
       app = null

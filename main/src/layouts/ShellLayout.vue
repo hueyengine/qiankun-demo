@@ -7,7 +7,6 @@
         mode="horizontal"
         :router="true"
         :default-active="menuActive"
-        :key="menuActive"
         class="top-menu"
         background-color="#0f172a"
         text-color="#94a3b8"
